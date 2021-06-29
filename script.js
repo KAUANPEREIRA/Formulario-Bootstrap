@@ -1,6 +1,11 @@
 
 function salvar(){
-    var nome = document.getElementById('nome')
+    let nome = document.getElementById('nome')
+    let sobrenome = document.getElementById('sobrenome')
+    let telefone= document.getElementById('telefone')
+    let nascimento = document.getElementById('nascimento')
+    let rg = document.getElementById('rg')
+    let mae = document.getElementById('MAE')
 
     if(nome.value==0 ){
         alert('Preencha os dados corretamentes ! ')
