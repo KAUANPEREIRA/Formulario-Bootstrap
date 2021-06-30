@@ -62,16 +62,17 @@
                     <input type="tex" name="" class="form-control" placeholder="000.000.000-00" id="cpf">
                 </div>
                 <div class=" col-md-3">
-                    <label><b>Sexo</b></label>
-                    <input type="tex" name="" class="form-control" placeholder="(Masc)ou(Fem)" id="fsex">
-                </div>
-                <div class=" col-md-3">
                     <label><b>Telefone(res)</b></label>
                     <input type="tex" name="" class="form-control" placeholder="Tel(residencial)" id="residencial">
-                </div>
+                </div> 
                 <div class=" col-md-3">
                     <label><b>Cep</b></label>
                     <input type="tex" name="" class="form-control" placeholder="0000-000" id="cep">
+                </div>
+                <div class=" col-md-3" style="display: inline-flex; margin-top: 30px;">
+                    <label><b>Sexo</b></label>
+                    <input type="radio" name="fsex" class="form-control" value="masculino" id="masc">Masculino
+                    <input type="radio" name="fsex" class="form-control" value="feminino" id="fem">Feminino
                 </div>
             </div>
             <div class="row espaco">
@@ -93,7 +94,7 @@
         <div class="botoes espacoTop">
             <div class="row">
                 <div class="col-md-1">
-                    <button type="button" class="btn btn-primary esquerda" onclick="salvar()">Salvar</button>
+                    <button type="button" class="btn btn-primary esquerda" onclick="salvar()"  >Salvar</button>
                 </div>
                 <div class="col-md-1" style="margin-left: 5px;">
                     <button type="button" class="btn btn-light direita">Cancelar</button>
@@ -112,3 +113,4 @@
    
 </body>
 </html>
+
