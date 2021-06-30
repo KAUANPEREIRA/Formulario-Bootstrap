@@ -8,6 +8,8 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -68,16 +70,20 @@
                     <input type="tex" name="" class="form-control" placeholder="Tel(residencial)" id="residencial">
                 </div>
                 <div class=" col-md-3">
-                    <label><b>Whatsaap</b></label>
-                    <input type="tex" name="" class="form-control" placeholder="tel(whatsaap)" id="whatsaap">
+                    <label><b>Cep</b></label>
+                    <input type="tex" name="" class="form-control" placeholder="0000-000" id="cep">
                 </div>
             </div>
             <div class="row espaco">
-                <div class=" col-md-6">
+                <div class=" col-md-4">
+                    <label><b>Rua</b></label>
+                    <input type="tex" name="" class="form-control" placeholder="Rua" id="rua">
+                </div>
+                <div class=" col-md-4">
                     <label><b>Cidade</b></label>
                     <input type="tex" name="" class="form-control" placeholder="Cidade" id="cidade">
                 </div>
-                <div class=" col-md-6">
+                <div class=" col-md-4">
                     <label><b>Estado</b></label>
                     <input type="tex" name="" class="form-control" placeholder="Estado" id="estado">
                 </div>
@@ -89,7 +95,7 @@
                 <div class="col-md-1">
                     <button type="button" class="btn btn-primary esquerda" onclick="salvar()">Salvar</button>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1" style="margin-left: 5px;">
                     <button type="button" class="btn btn-light direita">Cancelar</button>
                 </div>
             </div>
