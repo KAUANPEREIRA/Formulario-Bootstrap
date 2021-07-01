@@ -23,7 +23,7 @@ function salvar(){
     var pai = document.getElementById('pai')
     var email = document.getElementById('email')
     var cpf = document.getElementById('cpf')
-    var sexo = document.getElementsByTagName('fsex')
+    var sexo = document.getElementsByName('fsex')
     var residencial = document.getElementById('residencial')
     var estado = document.getElementById('estado')
     var cidade = document.getElementById('cidade')
@@ -59,7 +59,7 @@ function salvar(){
         alert('Preencha os dados corretamentes!')
     }else if(cep.value==0){
         alert('Preencha os dados corretamentes !')
-    }else if(sexo.value !='masculino' || sexo.value!='feminino'){
+    }else if(sexo[0].checked != true && sexo[1].checked != true){
         alert('Preencha os dados corretamentes')
     }
     else{ 
@@ -68,6 +68,13 @@ function salvar(){
     }
 
 }
+
+
+    function validaSexo(){
+        if(sexo!= [0].checked || sexo!= [1].checked){
+            alert('Preencha dos dados corretamentes')
+        }
+    }
 
 
     
