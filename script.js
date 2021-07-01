@@ -36,9 +36,6 @@ function salvar(){
     var cidade = document.getElementById('cidade')
     var cep = document.getElementById('cep')
 
-
-
-
     if(nome.value==0 ){
       alert('Preencha os dados corretamentes ! ')
     }else if(sobrenome.value==0){
