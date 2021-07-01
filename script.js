@@ -10,6 +10,13 @@
 });
 
 let sucesso 
+let ano =new Date()
+let mesA = ano.getMonth()+1
+let diaA = ano.getDate()
+let anoAtualizado = ano.getFullYear()
+let anoAtual = diaA +'/' + mesA +'/'+ anoAtualizado
+
+console.log(anoAtual)
 
 
 //função que valida se todos os campos estão preenchidos
@@ -38,7 +45,7 @@ function salvar(){
         alert('preencha os dados corretamentes !')
     }else if(telefone.value==0){
         alert('preencha os dados corretamentes ! ')
-    }else if(nascimento.value==0){
+    }else if(nascimento.value<=0){
         alert('Preencha os dados corretamentes !')
     }else if(rg.value==0){
         alert('Preencha os dados corretamentes !')
@@ -70,11 +77,6 @@ function salvar(){
 }
 
 
-    function validaSexo(){
-        if(sexo!= [0].checked || sexo!= [1].checked){
-            alert('Preencha dos dados corretamentes')
-        }
-    }
 
 
     
