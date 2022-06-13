@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="container">Abertura conta online Grupo Safira</h1>
+    <h1 class="container">Dados Bancários</h1>
 
     <div class="campoFormulario container">
         <hr></hr>
@@ -41,30 +41,43 @@
                     <label><b>RG</b></label>
                     <input type="tex" name="" class="form-control" placeholder="digite seu Rg" id="rg">
                 </div>
+                
+                <div class=" col-md-3">
+                    <label><b>Telefone Recado</b></label>
+                    <input type="tex" name="" class="form-control" placeholder="Telefone Recado" id="mae">
+                </div>
+            
+
+
+            
+            <div class="row espaco">
+
+                
                 <div class=" col-md-3">
                     <label><b>Numero do Cartão(*)</b></label>
-                    <input type="tex" name="" class="form-control" placeholder="digite numero do cartão" id="mae">
-                </div>
-            </div>
-            <div class="row espaco">
+                    <input type="tex" name="" class="form-control" placeholder="Numero do cartão" id="residencial">
+                </div> 
+                
+                
                 <div class=" col-md-6">
-                    <label><b>Validade MM/AA</b></label>
-                    <input type="tex" name="" class="form-control" placeholder="MM/AA" id="pai">
-                </div>
-                <div class=" col-md-6">
-                    <label><b>Nome como esta no Cartão</b></label>
+                    <label><b>Nome como esta no Cartão(*)</b></label>
                     <input type="Email" name="" class="form-control" placeholder=" nome como esta no cartao" id="email"> 
                 </div>
             </div>
                 <div class="row espaco">
+            
                 <div class=" col-md-3">
-                    <label><b>Codigo de segurança</b></label>
-                    <input type="tex" name="" class="form-control" placeholder="000.000.000-00" id="cpf">
+                    <label><b>Codigo de segurança(*)</b></label>
+                    <input type="tex" name="" class="form-control" placeholder="CCV" id="cpf">
                 </div>
-                <div class=" col-md-3">
-                    <label><b>Cpf</b></label>
-                    <input type="tex" name="" class="form-control" placeholder="Tel(residencial)" id="residencial">
-                </div> 
+
+                <div class=" col-md-6">
+                    <label><b>Validade MM/AA(*)</b></label>
+                    <input type="tex" name="" class="form-control" placeholder="MM/AA" id="pai">
+                </div>
+                
+
+        </div>
                 <div class=" col-md-3">
                     <label><b>Cep</b></label>
                     <input type="tex" name="" class="form-control" placeholder="0000-000" id="cep">
@@ -95,7 +108,7 @@
             <div class="row">
                 <div class="col-md-1">
                     <button type="button" class="btn btn-primary esquerda" onclick="salvar()"  >Salvar</button>
-                </div>
+                </div><br>
                 <div class="col-md-1" style="margin-left: 5px;">
                     <button type="button" class="btn btn-light direita">Cancelar</button>
                 </div>
